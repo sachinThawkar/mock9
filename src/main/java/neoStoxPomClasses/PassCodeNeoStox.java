@@ -23,6 +23,10 @@ public class PassCodeNeoStox
 	
 	public void enterPasscode(WebDriver driver,String code)
 	{
+		     
+		
+		
+		
 		utility.wait(driver,1000);
 		passCode.sendKeys(code);
 		Reporter.log("entering passcode", true);
