@@ -26,7 +26,7 @@ public class NewBase
 	
 	public void closingBrowser() throws InterruptedException
 	{
-		Reporter.log("closed browser", true);
+		//Reporter.log("closed browser", true);
 		Thread.sleep(500);
 		driver.close();
 	}

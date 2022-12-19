@@ -20,7 +20,7 @@ import neoStoxPomClasses.Start;
 import utility.utility;
 
 @Listeners(ListnerMav.Listener.class)
-public class UsingPropertyFile
+public class UsingPropertyFileTest
 {
 	public class ValidateNeostoxUserName extends NewBase
 	{

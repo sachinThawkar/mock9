@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Reporter;
+
 
 import utility.utility;
 
@@ -25,6 +25,6 @@ public void clickOnStartPage(WebDriver driver)
 {
 	utility.wait(driver, 1000);
 	startPage.click();
-	Reporter.log("click on signin page", true);
+	//Reporter.log("click on signin page", true);
 }
 }

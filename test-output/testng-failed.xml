@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="neoStoxTest.UsingPropertyFile$ValidateNeostoxUserName">
+      <class name="neoStoxTest.UsingPropertyFileTest$ValidateNeostoxUserName">
         <methods>
           <include name="logingToNeostox"/>
-          <include name="validateUserName"/>
-          <include name="closeApplication"/>
           <include name="logout"/>
           <include name="launchNeostox"/>
+          <include name="validateUserName"/>
+          <include name="closeApplication"/>
         </methods>
-      </class> <!-- neoStoxTest.UsingPropertyFile$ValidateNeostoxUserName -->
+      </class> <!-- neoStoxTest.UsingPropertyFileTest$ValidateNeostoxUserName -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

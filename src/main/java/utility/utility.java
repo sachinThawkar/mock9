@@ -12,7 +12,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.io.FileHandler;
-import org.testng.Reporter;
+
 
 import net.bytebuddy.utility.RandomString;
 
@@ -39,7 +39,7 @@ public class utility
 		 File destination = new File("C:\\Users\\hp\\Desktop\\Screenshot Selenium\\"+fileName+input+".png");
 		 FileHandler.copy(sorce, destination);
 		 
-		 Reporter.log("taking screenshot", true);
+		 //Reporter.log("taking screenshot", true);
 		 
 	}
 	
@@ -48,7 +48,7 @@ public class utility
 	{
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].scrollIntoView(true)", element);
-		Reporter.log("scrolling the page"+element.getText(), true);
+	//	Reporter.log("scrolling the page"+element.getText(), true);
 	
 	}
 	
@@ -56,7 +56,7 @@ public class utility
 	public static void wait(WebDriver driver,int time)
 	{
 		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(time));
-		Reporter.log("waiting for"+time+"milis", true);
+		//Reporter.log("waiting for"+time+"milis", true);
 	}
 
 }

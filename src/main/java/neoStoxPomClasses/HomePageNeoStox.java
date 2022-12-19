@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Reporter;
+
 
 import utility.utility;
 
@@ -29,12 +29,12 @@ public class HomePageNeoStox
 		utility.wait(driver, 1000);
 		okButton.click();
 		closeButton.click();
-		Reporter.log("popUp handle", true);
+		//Reporter.log("popUp handle", true);
 		}
 		else
 		{
 			utility.wait(driver, 1000);
-			Reporter.log("No popup", true);
+		//	Reporter.log("No popup", true);
 		}
 		
 		
@@ -43,7 +43,7 @@ public class HomePageNeoStox
 	public String getUserName()
 	{
 		String actualUserName = userName.getText();
-		Reporter.log("actual user name is", true);
+	//	Reporter.log("actual user name is", true);
 		return actualUserName;
 	}
 	
@@ -51,7 +51,7 @@ public class HomePageNeoStox
 	{
 		utility.wait(driver, 1000);
 		String actualBalance = balance.getText();
-		Reporter.log("actual Balance is", true);
+		//Reporter.log("actual Balance is", true);
 		return actualBalance;
 	}
 	
@@ -61,7 +61,7 @@ public class HomePageNeoStox
 		userName.click();
 		utility.wait(driver, 1000);
 		logoutButton.click();
-		Reporter.log("logout from applicating", true);
+		//Reporter.log("logout from applicating", true);
 	}
 	
 	
